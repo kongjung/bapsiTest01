@@ -338,7 +338,7 @@ a:hover {
       
       // 수정 버튼 - ul안의 click reList의 버튼 이벤트 설정 function 
       $("#reply").on("click", ".reList button", function() {
-         var li = $(this).parent().parent(); //바보
+         var li = $(this).parent().children(); //바보
 
          var no = li.attr("data-no");
          var reContent = li.text();
